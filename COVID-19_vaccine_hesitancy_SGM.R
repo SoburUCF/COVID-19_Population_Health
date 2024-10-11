@@ -11,10 +11,10 @@ df <- read_excel("data/CEAL Data Combined_.xlsx", sheet = 4)
 
 
 
-#Selected column
+#Selected columns
 dfv1 <- df %>% select(c("Q1","Q8", "Q9", "Q10", "Q20"  ,"Q27", "Q37", "Q38", "Q41", "Q43", "Q87_1", "Q87_2", "Q87_3", "Q87_4", "Q87_5", "Q87_6", "Q87_7", "Q87_8", "Q87_9", "Q87_10",
                         "Q88_1", "Q88_2", "Q88_3", "Q88_4", "Q88_5", "Q88_6", "Q107...225"))
-
+#Rename columns
 colnames(dfv1) <- c("age","dof", "gender", "gender_sp", "Education" , "insurance" ,"vaccinated", "likely", "trust", "confidence", "Q87_1", "Q87_2", "Q87_3", "Q87_4", "Q87_5", "Q87_6", "Q87_7", "Q87_8", "Q87_9", "Q87_10",
                     "Q88_1", "Q88_2", "Q88_3", "Q88_4", "Q88_5", "Q88_6", "pregnency")
 
